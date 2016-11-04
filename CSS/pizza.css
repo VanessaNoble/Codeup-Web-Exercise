@@ -1,0 +1,53 @@
+body{
+    background-image: url("../img/pizzabama.gif");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: ghostwhite;
+    line-height: 1.88889;
+    margin: 0;
+    padding: 0;
+
+}
+.intro {
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    text-align: center;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: -5px;
+    color: #444;
+}
+
+h5 {
+
+    font-family: "Lucida Grande", Tahoma;
+    font-size: 10px;
+    font-weight: lighter;
+    font-variant: normal;
+    text-transform: uppercase;
+    color: #666666;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: normal;
+    color: #222;
+}
+
+h3 {
+    font-family: georgia, serif;
+    color: #3B200F;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 125%;
+    text-align: center;
+}
+
+
+
