@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>countdown</title>
+</head>
+<body>
+<div id="timer">
+    <span id="seconds">10</span>
+</div>
+<div class="control">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+    <!--<button id="count-up">Count up</button>-->
+    <button id="count-down">Count down</button>
+</div>
+<script>
+
+
+        var seconds = parseInt(document.getElementById('seconds').innerText);
+        var interval = 1000;
+        var start = document.getElementById("start");
+        var stop = document.getElementById("stop");
+        var reset = document.getElementById("reset");
+        var intervalId;
+
+        function startTimer() {
+            if (seconds == 0) {
+                alert('you lose!!!!!');
+                document.body.innerHTML = '';
+            } else if (seconds > 0) {
+                document.getElementById('seconds').innerHTML = seconds;
+            }
+
+            seconds--;
+        };
+
+        start.addEventListener("click",function (e) {
+            if(!intervalId) {
+                intervalId = setInterval(startTimer, interval);
+            }
+        });
+        stop.addEventListener("click",function (e){
+            clearInterval(intervalId);
+        });
+        reset.addEventListener("click",function (e){
+            document.getElementById('seconds').innerHTML = 10;
+            seconds = 10;
+        });
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
