@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>November,15,2016</title>
+</head>
+<body>
+<!--// write a function `chunk` that splits an array into chunks-->
+<!--// of 3-->
+<!--// ex-->
+<!--// > chunk([1,2,3,4,5,6,7])-->
+<!--//   [[1,2,3], [4,5,6], [7]]-->
+<!--// modify the function to take in a parameter for chunk size-->
+<script>
+    var createGroupedArray = function(arr, chunkSize) {
+        var groups = [], i;
+        for (i = 0; i < arr.length; i += chunkSize) {
+            groups.push(arr.slice(i, i + chunkSize));
+        }
+        return groups;
+    }
+
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    var groupedArr = createGroupedArray(arr, 3);
+    var result = JSON.stringify(groupedArr);
+    console.log(groupedArr);
+</script>
+
+<!--// python example-->
+<!--// write a function that generates a range of numbers as an array-->
+<!--// modify the function such that you can pass in a third parameter-->
+<!--// for the step-->
+<!--// ex-->
+<!--// > range(2, 11, 2)-->
+<!--//   [2, 4, 6, 8, 10]-->
+<!--// can the third parameter be optional (default to 1)?-->
+<!--// can you create a range in reverse order? i.e. `range(5,2)-->
+        <script>
+            function range(x,y,z) {
+                var myArray =[];
+                var higher = (x > y) ? x : y;
+                var lower = (x < y) ? x : y;
+                for (var i = lower; i <= higher; i+=z){
+                    myArray.push(i);
+                }
+                return myArray;
+            }
+            console.log(range(10, 2, 2));
+        </script>
+
+<!--// ex-->
+<!--// > range(1,5)-->
+<!--//   [1, 2, 3, 4]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--// write a function that takes an array, and returns an object-->
+<!--// whose keys are each value in the array, and whose values-->
+<!--// are the number of occurances of each key-->
+<!--// ex-->
+<!--// > getCount([6, 7, 4, 4])-->
+<!--// {6: 1, 7: 1, 4: 2}-->
+
+<!--<script>-->
+<!--//    function getCount(myArray){-->
+<!--//        var myObject = {};-->
+<!--//        for (var i = 0; i < myArray.length; i++){-->
+<!--//            var count = 0;-->
+<!--//            for (var j = 0; j < myArray.length; j++ ){-->
+<!--//                if (myArray[i] == myArray[j]) {-->
+<!--//                    count++;-->
+<!--//                }-->
+<!--//            }-->
+<!--//            myObject[myArray[i]] = count;-->
+<!--//        }-->
+<!--//        return myObject;-->
+<!--//    }-->
+<!--//    console.log(getCount([6, 7, 4, 4, 4, 3, 3]));-->
+
+
+
+//<!--// write a function that checks if a string is a palindrome-->
+//<!--// *bonus*: ignore special characters, whitespace, and casing-->
+
+    <!--function palindrome(myString){-->
+        <!--var i = myString.length -1;-->
+        <!--var reverseString = "";-->
+
+        <!--while(i >= 0){-->
+            <!--reverseString += myString[i];-->
+            <!--i&#45;&#45;;-->
+        <!--}-->
+        <!--if(reverseString == myString){-->
+            <!--return true;-->
+        <!--}-->
+        <!--return false;-->
+    <!--}-->
+<!--console.log(palindrome("madam"));-->
+
+
+
+<!--</script>-->
+
+<!--// t9 calculator-->
+<!--// write a function that accepts a string and returns the number-->
+<!--// of keypresses it would take to create that string with t9-->
+
+<!--// convert back and forth from 24 hour to 12 hour time with 2 functions-->
+<!--// ex-->
+<!--// convertToTwentyFourHour('1:30pm') // 13:30-->
+<!--// convertToTwelveHourTime('14:40') // 2:20pm-->
+</body>
+</html>
