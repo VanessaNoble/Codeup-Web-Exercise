@@ -1,0 +1,141 @@
+body{
+    background-color: ghostwhite;
+    /*opacity: .8;*/
+
+
+}
+.container{
+    border-style: solid;
+    /*opacity: 0.40;*/
+    width: 100vw;
+    padding: 1%;
+    margin-top: 2%;
+    background-blend-mode: screen;
+    background-color: red;
+    background-image: url("../img/cloudy.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+.jumbotron {
+    background-color: transparent;
+    padding: .5px;
+    margin-bottom: .1px;
+    /*background-image: url("../img/cloudy.jpeg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*width: 80vw;*/
+    /*background-position-x: 50%;*/
+
+    /*background-blend-mode: screen;*/
+    /*background-color: red;*/
+
+
+}
+#letters{
+    font-family: "Aku & Kamu";
+    background-color: black;
+    background-repeat: no-repeat;
+    font-size: 7.5em;
+    font-weight: bolder;
+    background-image: url("../img/multicolorcosmo.jpeg");
+    background-size: 720px 200px;
+    background-blend-mode: screen;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+
+    
+}
+@media (min-width: 1100px) {
+    .jumbotron {
+        font-size: 1em;
+        /*background-size: 50em  950em;*/
+    }
+}
+
+@media (min-width: 100px) {
+        .container {
+            font-size: 2em;
+        }
+    }
+@media (max-width: 1000px) {
+    .container {
+        font-size: 75%;
+        background-size: 250em  150em;
+
+    }
+}
+@media (max-width: 1100px) {
+    .jumbotron{
+        font-size: 1em;
+        /*background-size: 850px 300px;*/
+
+}
+    @media(max-width: 1100px){
+    #letters{
+        background-size: 480px 80px;
+    }
+    }
+}
+@media(min-width: 1100px){
+    #letters{
+        background-size: 980px 520px;
+    }
+}
+
+.gif {
+        height: 300px !important;
+        background-size: contain;
+        text-align: center;
+        background-image: url("../img/mindblown.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        /*background-size: 2px;*/
+    }
+
+    #leftDisplay {
+        width: 18%;
+        margin: 5%;
+    }
+
+    #centerDisplay {
+        width: 18%;
+        margin: 5%;
+    }
+
+    #rightDisplay {
+        width: 18%;
+        margin: 5%;
+    }
+
+    .btn {
+        width: 18%;
+        color: black;
+        text-align: right;
+        font-family: "Aku & Kamu";
+    }
+    #equal{
+        width: 51%;
+        height:20%;
+        opacity: .601;
+        text-align: center;
+        font-size: medium;
+        font-family: "Aku & Kamu";
+
+    }
+    #SC{
+        width: 16.84%;
+        font-family: "Aku & Kamu";
+    }
+
+    .operator {
+        font-family: "Aku & Kamu";
+        width: 18%;
+        background-color: #072950;
+        opacity: .601;
+        color: white;
+
+    }
