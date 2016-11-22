@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--disable the scrolling and dragging -->
+    <!--behaviour on small screens where the map takes full width.-->
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/googlemap.css">
+
+</head>
+<body>
+    <!-- div to set api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmk-UpkrkIarT8N6TIsIf2p1neXiut7eY"></script>
+    <!--map title-->
+    <h1 text align="center">Vanessa's Favorite Places Map</h1>
+    <!--display key legend for each location include address and hours in a div -->
+    <div id="map-canvas" class="map desk-three-foods"></div>
+    <!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+        <div class="map-legend desk-one-food">
+            <div class="location location-1">
+                <div class="location--inner">
+                    <img src="../img/svg/Asian_Food_1.svg">
+                    <!-- or or instead of <img> if we use a sprite
+                    <span class="marker-icon marker-coffee"></span>-->
+                    <h3>The Cracked Conch</h3>
+                    <p>13 Place de PEPS</p>
+                    <h4>Opening Hours:</h4>
+                    <p>Opened daily:</p>
+                    <p>9am - 8pm</p>
+                </div>
+            </div>
+            <div class="location location-2">
+                <div class="location--inner">
+                    <img src="../img/svg/Burger_2.svg">
+                    <!-- or instead of <img> if we use a sprite
+                    <span class="marker-icon marker-office"></span>-->
+                    <h3>Mi Cocina</h3>
+                    <p>1 Place de PEPS</p>
+                    <h4>Opening Hours:</h4>
+                    <p>Tuesday - Saturday</p>
+                    <p>9am - 8pm</p>
+                </div>
+            </div>
+            <div class="location location-3">
+                <div class="location--inner">
+                    <img src="../img/svg/Food_3.svg">
+                    <!-- or or instead of <img> if we use a sprite
+                    <span class="marker-icon marker-coffee"></span>-->
+                    <h3>Wild Ginger</h3>
+                    <p>13 Place de PEPS</p>
+                    <h4>Opening Hours:</h4>
+                    <p>Opened daily:</p>
+                    <p>9am - 8pm</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Script to show address on map -->
+    <script type="text/javascript">
+
+(function() {
+    "use strict";
+    var infoWindow = [];
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            zoom: 4,
+            center:{ lat : 19.382584, lng : -81.416277},
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+//            scrollwheel: false,
+            styles: [{"stylers": [{"saturation": -100}]}],
+        });
+
+
+        var locations = [
+            {
+            position: {lat : 19.382584, lng : -81.416277},
+            title: 'Cracked Conch',
+            icon: {
+                url:  "../img/png/Coffee_3.png",
+                scaledSize: new google.maps.Size(64, 64)
+            },
+            info: "The Cracked Conch, is a delectable Caribbean restaurant sitting"+
+            "on the edge on the edge of Grand Cayman. Dinning in at The Cracked Conch is a must while"+
+        "visiting Grand Cayman."
+        },
+        {
+            position: {lat : 32.835774, lng : -96.806052},
+            title: 'Mi Cocina',
+            icon: {
+                url: "../img/png/Coffee_3.png",
+                scaledSize: new google.maps.Size(64, 64)
+            },
+            info: "Mi Cocina,is an authentic mexican cuisine nestled in Highland Park Village while dining in it is strongly suggested to try a Mabo Taxi."
+        },
+        {
+            position: {lat : 10.423088, lng : -83.719914},
+            title: 'Wild Ginger',
+            icon: {
+                url:  "../img/png/Coffee_3.png" ,
+                scaledSize: new google.maps.Size(64,64)
+            },
+            info: "The Wild Ginger, is a great introduction to an authentic Costa Rician experience! Wild Ginger serves caribbean classic dishes"
+        },
+
+    ];
+
+
+    locations.forEach( function( element, i ){
+        infoWindow[i] = new google.maps.InfoWindow({
+            content: '<div class="info_content"><h3>'+ element.title + "</h3><p>" + element.info + "</p></div>"
+        })
+        var marker = new google.maps.Marker({
+            position: element.position,
+            map: map,
+            title: element.title,
+            icon: element.icon,
+        });
+        console.log(marker);
+        marker.addListener('click', function(e){
+            infoWindow[i].open(map, marker);
+        } )
+    });
+
+})();
+
+
+
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+</body>
