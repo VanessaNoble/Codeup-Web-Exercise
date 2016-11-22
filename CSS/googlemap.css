@@ -74,7 +74,6 @@ p {
         font-size: 250%;
     }
 }
-
 @media screen and (min-wiidth: 1024px) {
     .map, .map-legend {
         height:100%;
