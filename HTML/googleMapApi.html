@@ -12,14 +12,30 @@
     <!-- div to set api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmk-UpkrkIarT8N6TIsIf2p1neXiut7eY"></script>
     <!--map title-->
-    <h1 text align="center">Vanessa's Favorite Places Map</h1>
+    <div class="title">
+        MY<br>
+        FAVORITE<br>
+        RESTAURANT'S<br>
+        MAP
+
+    </div>
+
+
+
+
+
+
+
+
+
+
     <!--display key legend for each location include address and hours in a div -->
     <div id="map-canvas" class="map desk-three-foods"></div>
     <!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
         <div class="map-legend desk-one-food">
             <div class="location location-1">
                 <div class="location--inner">
-                    <img src="../img/svg/Asian_Food_1.svg">
+                    <img src="../img/svg/Burger_2.svg">
                     <!-- or or instead of <img> if we use a sprite
                     <span class="marker-icon marker-coffee"></span>-->
                     <h3>The Cracked Conch</h3>
@@ -31,7 +47,7 @@
             </div>
             <div class="location location-2">
                 <div class="location--inner">
-                    <img src="../img/svg/Burger_2.svg">
+                    <img src="../img/svg/Food_3.svg">
                     <!-- or instead of <img> if we use a sprite
                     <span class="marker-icon marker-office"></span>-->
                     <h3>Mi Cocina</h3>
@@ -43,7 +59,7 @@
             </div>
             <div class="location location-3">
                 <div class="location--inner">
-                    <img src="../img/svg/Food_3.svg">
+                    <img src="../img/svg/Asian_Food_1.svg">
                     <!-- or or instead of <img> if we use a sprite
                     <span class="marker-icon marker-coffee"></span>-->
                     <h3>Wild Ginger</h3>
@@ -60,13 +76,14 @@
 
 (function() {
     "use strict";
+
     var infoWindow = [];
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
             zoom: 4,
             center:{ lat : 19.382584, lng : -81.416277},
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-//            scrollwheel: false,
-            styles: [{"stylers": [{"saturation": -100}]}],
+            scrollwheel: false,
+            styles: [{"stylers": [{"saturation": -75}]}],
         });
 
 
@@ -75,8 +92,8 @@
             position: {lat : 19.382584, lng : -81.416277},
             title: 'Cracked Conch',
             icon: {
-                url:  "../img/png/Coffee_3.png",
-                scaledSize: new google.maps.Size(64, 64)
+                url:  "../img/svg/Burger_2.svg",
+                scaledSize: new google.maps.Size(64, 64),
             },
             info: "The Cracked Conch, is a delectable Caribbean restaurant sitting"+
             "on the edge on the edge of Grand Cayman. Dinning in at The Cracked Conch is a must while"+
@@ -86,7 +103,7 @@
             position: {lat : 32.835774, lng : -96.806052},
             title: 'Mi Cocina',
             icon: {
-                url: "../img/png/Coffee_3.png",
+                url: "../img/svg/Food_3.svg",
                 scaledSize: new google.maps.Size(64, 64)
             },
             info: "Mi Cocina,is an authentic mexican cuisine nestled in Highland Park Village while dining in it is strongly suggested to try a Mabo Taxi."
@@ -95,7 +112,7 @@
             position: {lat : 10.423088, lng : -83.719914},
             title: 'Wild Ginger',
             icon: {
-                url:  "../img/png/Coffee_3.png" ,
+                url:  "../img/svg/Asian_Food_1.svg" ,
                 scaledSize: new google.maps.Size(64,64)
             },
             info: "The Wild Ginger, is a great introduction to an authentic Costa Rician experience! Wild Ginger serves caribbean classic dishes"
@@ -125,5 +142,5 @@
 
 
 </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+
 </body>
