@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 snake - Canvas Snake Game</title>
+    <link rel="stylesheet" href="../CSS/snake.css" type="text/css">
+</head>
+<body>
+<h1>SNAKE</h1>
+
+
+<div>
+    <canvas id="the-game" width="320" height="240"></canvas>
+</div>
+<!--The Modal & The Hover Animation-->
+<a class="button" id="INSTRUCTIONS">
+    <span>
+        <span>INSTRUCTIONS</span>
+    </span>
+</a>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">x</span>
+            <p>The object of the game is to direct the snake to the food!</p>
+            <p> Use up, down, left, and right arrows to direct the snake.</p>
+            <p>Collect the food to grow and increase the snakes speed.</p>
+            <p> If you direct then snake into the wall the impact will kill him.</p>
+        </div>
+    </div>
+<script type="text/javascript" src="JS/snake.js"></script>
+</body>
+
+</html>
