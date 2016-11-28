@@ -1,18 +1,21 @@
 body{
-    background-color: ghostwhite;
+    background-image: url("../img/calculator.jpeg");
     /*opacity: .8;*/
 
 
 }
 .container{
+
     border-style: solid;
-    /*opacity: 0.40;*/
-    width: 100vw;
-    padding: 1%;
-    margin-top: 2%;
+    border-color: chartreuse;
+    border-width: thick;
+    opacity: 1.0;
+    width: 60vw;
+    padding: 2%;
+    margin-top: 25%;
     background-blend-mode: screen;
-    background-color: red;
-    background-image: url("../img/cloudy.jpeg");
+    background-color: aliceblue;
+    background-image: url("../img/clacback.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -23,16 +26,6 @@ body{
     background-color: transparent;
     padding: .5px;
     margin-bottom: .1px;
-    /*background-image: url("../img/cloudy.jpeg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*width: 80vw;*/
-    /*background-position-x: 50%;*/
-
-    /*background-blend-mode: screen;*/
-    /*background-color: red;*/
-
-
 }
 #letters{
     font-family: "Aku & Kamu";
@@ -69,15 +62,14 @@ body{
     }
 }
 @media (max-width: 1100px) {
-    .jumbotron{
+    .jumbotron {
         font-size: 1em;
         /*background-size: 850px 300px;*/
-
-}
-    @media(max-width: 1100px){
-    #letters{
-        background-size: 480px 80px;
     }
+}
+@media(max-width: 1100px){
+    #letters{
+        background-size: 480px 87px;
     }
 }
 @media(min-width: 1100px){
@@ -99,16 +91,25 @@ body{
     #leftDisplay {
         width: 18%;
         margin: 5%;
+        opacity: .1;
+        color: white;
+        background-color: #072950;
     }
 
     #centerDisplay {
         width: 18%;
         margin: 5%;
+        opacity: .1;
+        color: white;
+        background-color: #072950;
     }
 
     #rightDisplay {
         width: 18%;
         margin: 5%;
+        opacity: .1;
+        color: white;
+        background-color: #072950;
     }
 
     .btn {
@@ -116,6 +117,7 @@ body{
         color: black;
         text-align: right;
         font-family: "Aku & Kamu";
+
     }
     #equal{
         width: 51%;
@@ -134,8 +136,12 @@ body{
     .operator {
         font-family: "Aku & Kamu";
         width: 18%;
-        background-color: #072950;
         opacity: .601;
-        color: white;
+        font-weight: bold;
+        color: whitesmoke;
+        background-color: #072950;
+        /*background-image: url("../img/pizzabama.gif");*/
+        /*background-blend-mode: screen;*/
+        /*background-size: 28px;*/
 
     }
