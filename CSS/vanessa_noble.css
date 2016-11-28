@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline; }
+
+html {
+    line-height: 1; }
+
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
+    display: block; }
+
+body {
+    text-align: center;
+    color: #5c3e52; }
+
+a {color: #bda3c1; text-decoration:none}
+
+.wrap {
+    font-family: "Ruthie", "fantasy";
+    width: 750px;
+    margin: 0 auto;
+    padding: 100px 0 100px;
+    overflow: hidden; }
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 200px;
+    font-size: 4.3em; }
+
+.diamond {
+    display: block;
+    float: left;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    text-decoration: none;
+    background: #5c3e52;
+    margin-left: 72px;
+    margin-top: -53px;
+    width: 178px;
+    height: 178px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg); }
+/*set the thumbnail image, positions images horiz. and hides the overflow shape*/
+.thumb {
+    background: url(../img/sprites.png);
+    position: relative;
+    overflow: hidden; }
+/*set images in thumbnail straight*/
+.thumb:after {
+    content: "";
+    position: absolute;
+    top: -36px;
+    left: -36px;
+    width: 250px;
+    height: 250px;
+    background: inherit;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 1; }
+/*position first group of thumbails to the left*/
+.break {
+    clear: left;
+    margin-left: 36px; }
+/*position second group of thumbnails to the left of neighbor tumbnail */
+.intend {
+    clear: left;
+    margin-left: 161px; }
+/*will add a shadow to text on pop up text box*/
+/*p {*/
+    /*text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }*/
+/*rotate text back to upright and center display portfolio without and hide other titles*/
+.diamond p {
+    position: relative;
+    line-height: 250px;
+    z-index: 1;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(-45deg) translate(-89px, 0);
+    -moz-transform: rotate(-45deg) translate(-89px, 0);
+    transform: rotate(-45deg) translate(-89px, 0);
+}
+/*hide titles until on hover*/
+.thumb p {
+    visibility: hidden; }
+/*position across sprite in diamond*/
+#coffee {
+    background-position: 0 0; }
+#port4{
+    background-position: -250px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#port3{
+    background-position: -500px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#portd{
+    background-position: -750px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#port11{
+    background-position: -1000px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+#port5{
+    background-position: -1250px 0;
+    /*width: 250px;*/
+    /*height: 250px;*/
+}
+
+.thumb:hover {
+    background: #a5b8a6; }
+
+.thumb.dark:hover {
+    background: #bda3c1; }
+
+/*.thumb:hover:after {*/
+    /*box-shadow: inset 0 0 100px #5c705d; }*/
+
+/*.thumb.dark:hover:after {*/
+    /*box-shadow: inset 0 0 100px #5c3e52; }*/
+
+.diamond:hover p {
+    visibility: visible; }
+
+
+
+/*future header pos icons*/
+
+/*footer {*/
+    /*font-size: 12px; }*/
+
+/*.no-csstransforms h1 {*/
+    /*margin-bottom: 147px; }*/
+/*.no-csstransforms .diamond {*/
+    /*margin-left: 0;*/
+    /*margin-top: 0; }*/
+/*.no-csstransforms .intend {*/
+    /*margin-left: 197px; }*/
+/*.no-csstransforms .break {*/
+    /*margin-left: 108px; }*/
+/*.no-csstransforms .diamond p {*/
+    /*line-height: 178px; }*/
