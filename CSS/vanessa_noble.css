@@ -133,7 +133,7 @@ p {
 
 .thumb:hover {
     background: #a5b8a6;
-   transition: 2s;
+   transition: 5s;
 }
 .thumb.dark:hover {
     background: #bda3c1; }
