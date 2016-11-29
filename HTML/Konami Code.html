@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Konami Code</title>
-    <style>
-        .pizza{
-            background-image: url("../img/pizzabama.gif");
-        }
-        </style>
+    <link rel="stylesheet" href="../CSS/konami.css">
+
 </head>
 <body>
-<h1>Konami Code</h1>
+<h1>Lorem Ipsum</h1>
+
 <p>“Latin placeholder text isn’t just a simple nuisance.
     It’s a plague on web design,a massive obstacle to building
     truly great online experiences.
     There’s no need for it in a world where content goes right to the heart
     of every successful website.” – John McGarvey</p>
-
+<canvas id="body2" width="650px" height="750px"></canvas>
 
 <script src="JQUERY/jquery-2.2.4.js"></script>
 <script>
@@ -36,13 +34,13 @@
 
                 if (i == konami.length -1) {
 
-                    $('p').addClass('pizza');
+                    $('#body2').addClass('pizza');
 
                     setTimeout(function () {
 
-                        $('p').removeClass('pizza');
+                        $('#body2').removeClass('pizza');
 
-                    }, 1300);
+                    }, 5300);
 
                 } else {
                     i++;
