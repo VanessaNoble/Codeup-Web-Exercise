@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.2.4.js"></script>
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">F.A.Q'S</h1>
+<DL>
+    <DT class="important"><STRONG>Will I encounter wild life at the park?</STRONG>
+        <DD class="invisible">Yes... obviously.
+
+    <DT class="important"><STRONG>Will the wild life attack me?</STRONG>
+        <DD class="invisible">maybe
+
+    <DT class="important"><STRONG>Is the park safe for kids?</STRONG>
+        <DD class="invisible">Yes-(ish). We recommend keeping a close eye on em'. (You know why)
+
+    <DT class="important"><STRONG>Are there bike trails?</STRONG>
+        <DD class="invisible">Yes! Enjoy our scenic bike trails, or go fully with your adventure on the
+            rugged "non-trails".
+
+    <DT class="important"><STRONG>How big is the park?</STRONG>
+        <DD class="invisible">Big enough!
+
+    <DT class="important"><STRONG>Are dogs allowed? </STRONG>
+        <DD class="invisible">We allow dogs to bring their humans.
+
+    <DT class="important"><STRONG>What are the park hours?</STRONG>
+        <DD class="invisible">Safe Hours: Sunrise to Sunset.
+
+    <DT class="important"><STRONG>Are fires allowed in the parks?</STRONG>
+        <DD class="invisible">Yes, fires are allowed but only in enclosed fireplaces or grills.<br> ALSO PUT OUT YOUR OWN FIRE!
+
+    <DT class="important"><STRONG>What recreation facilities does the park offer?</STRONG>
+        <DD class="invisible">Nature.
+
+    <DT class="important"><STRONG>Which facilities are reservable for parties and/or events?</STRONG>
+        <DD class="invisible"> 3 months ahread.
+
+</DL>
+<script>
+    "use strict";
+    $('document').ready(function() {
+        $('h1').click(function(event) {
+            event.preventDefault();
+            $('dd').fadeToggle('10s')('invisible');
+        });
+    });
+//    this is stupid should get rid of it
+    $('document').ready(function(){
+        $('body').dblclick(function(event){
+            event.preventDefault();
+            $('dt').slideToggle('5s')('important');
+        });
+    });
+</script>
+
+
+</body>
+</html>
