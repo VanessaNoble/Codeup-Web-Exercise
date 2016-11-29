@@ -1,0 +1,21 @@
+.pizza{
+    background-image: url("../img/pizzabama.gif");
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    background-size: 550px;
+}
+p,h1{
+    text-align: center;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+}
+body{
+    background-color: hotpink;
+    background-image: url("../img/port8.jpeg");
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: xx-large;
+}
