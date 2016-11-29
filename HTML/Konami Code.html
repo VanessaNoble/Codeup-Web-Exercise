@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami Code</title>
+    <style>
+        .pizza{
+            background-image: url("../img/pizzabama.gif");
+        }
+        </style>
+</head>
+<body>
+<h1>Konami Code</h1>
+<p>“Latin placeholder text isn’t just a simple nuisance.
+    It’s a plague on web design,a massive obstacle to building
+    truly great online experiences.
+    There’s no need for it in a world where content goes right to the heart
+    of every successful website.” – John McGarvey</p>
+
+
+<script src="JQUERY/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+    //<!--//set up variables to identify char codes-->
+    //set up event event Listener for up, down, keypress events
+    // set up handler that will track the code input
+    // match th inputs to the konami code till match is successful
+    // profit
+
+    var konami = [38,38,40,40,37,39,37,39,66,65],
+        i = 0;
+
+        $(document).keydown(function(e) {
+
+            if (e.keyCode == konami[i]) {
+
+                if (i == konami.length -1) {
+
+                    $('p').addClass('pizza');
+
+                    setTimeout(function () {
+
+                        $('p').removeClass('pizza');
+
+                    }, 1300);
+
+                } else {
+                    i++;
+                }
+            } else {
+                i = 0;
+
+            }
+        });
+</script>
+
+</body>
+</html>
