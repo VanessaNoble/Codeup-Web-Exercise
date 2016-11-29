@@ -19,38 +19,40 @@
 <script src="JQUERY/jquery-2.2.4.js"></script>
 <script>
     "use strict";
-    //<!--//set up variables to identify char codes-->
-    //set up event event Listener for up, down, keypress events
-    // set up handler that will track the code input
-    // match th inputs to the konami code till match is successful
-    // profit
+
 
     var konami = [38,38,40,40,37,39,37,39,66,65],
-        i = 0;
+            i = 0;
+    //set up event event Listener for up, down, events
+    // set up handler that will track the code input
+    $(document).keydown(function(e) {
 
-        $(document).keydown(function(e) {
+        // match th inputs to the konami code till match is successful
+        if (e.keyCode == konami[i]) {
 
-            if (e.keyCode == konami[i]) {
-
-                if (i == konami.length -1) {
-
-                    $('#body2').addClass('pizza');
-
-                    setTimeout(function () {
-
-                        $('#body2').removeClass('pizza');
-
-                    }, 5300);
-
-                } else {
-                    i++;
-                }
+            //?????need something to run to the end of the length in this I statement....
+            // if i go to the end of the konami length of the arrays
+           if(i == konami.length -1){
+                // profit
+                $('#body2').addClass('pizza');
+                //set a timer for the animation to clear
+                setTimeout(function () {
+                    //have the "profit" show in the body
+                     $('#body2').removeClass('pizza');
+                    //clear animation after 'x' seconds
+                }, 5300);
+                //iterate through the array
             } else {
-                i = 0;
-
+                i++;
             }
-        });
+            //else they don't get to see the code... say something passive aggressive here...
+        }else {
+            i = 0;
+
+        };
+    });
 </script>
+
 
 </body>
 </html>
