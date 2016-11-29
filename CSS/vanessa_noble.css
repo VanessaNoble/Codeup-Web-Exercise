@@ -85,8 +85,8 @@ h1 {
     clear: left;
     margin-left: 161px; }
 /*will add a shadow to text on pop up text box*/
-/*p {*/
-    /*text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }*/
+p {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }
 /*rotate text back to upright and center display portfolio without and hide other titles*/
 .diamond p {
     position: relative;
@@ -132,8 +132,9 @@ h1 {
 }
 
 .thumb:hover {
-    background: #a5b8a6; }
-
+    background: #a5b8a6;
+   transition: 2s;
+}
 .thumb.dark:hover {
     background: #bda3c1; }
 
