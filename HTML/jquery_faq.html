@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="JQUERY/jquery-2.2.4.js"></script>
+    <meta charset="utf-8">
+    <title>NAT PARK</title>
+    <style type="text/css" media="screen">
+        /*.invisible {*/
+            /*display: none;*/
+        /*}*/
+
+        /*.english{*/
+            /*display: block;*/
+        /*}*/
+        /*.anc{*/
+            /*display: block;*/
+        /*}*/
+        /*.spanish{*/
+            /*display: none;*/
+        /*}*/
+        /*#FAQ{*/
+            /*text-align: center;*/
+        /*}*/
+        .parks{
+            text-align: center;
+        }
+
+        #lemur-parks, #llama-parks, #otter-parks {
+            display: none;
+        }
+    </style>
+
+    <!--<script>-->
+    <!--"use strict";-->
+    <!--//    $('document').ready(function() {-->
+    <!--//        $('h1').click(function(event) {-->
+    <!--//            event.preventDefault();-->
+    <!--//            $('english').fadeToggle('10s')('invisible');-->
+    <!--//        });-->
+    <!--//    });-->
+    <!--//-->
+    <!--////    spanish version-->
+    <!--//    $('document').ready(function(){-->
+    <!--//        $('#s_button').click(function(event) {-->
+    <!--//            event.preventDefault();-->
+    <!--//            $('dt').fadeToggle('10s')('spanish');-->
+    <!--//-->
+    <!--////            $('.english').css('display','none');-->
+    <!--//        });-->
+    <!--//    });-->
+    <!--//give the first li in each ul font-weight bold-->
+    <!--//    $(document).ready(function() {-->
+    <!--//        $('li').css('color', 'pink');-->
+    <!--//        $('.first').css('font-weight', 'bold');-->
+    <!--//    });-->
+    <!--//    adds the invisible class on the parent ul of any li that is clicked.-->
+
+    <!--//</script>-->
+
+    <script>
+        "use strict";
+        $('document').ready(function() {
+            $('#lemur-parks-toggle').click(function() {
+                $('#lemur-parks').fadeToggle();
+            });
+            $('#llama-parks-texas-toggle').click(function() {
+                $('#llama-parks').fadeToggle();
+            });
+            $('#otter-parks-texas-toggle').click(function() {
+                $('#otter-parks').fadeToggle();
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+<!--<div id="FAQ">-->
+<!--<h1>F.A.Q'S</h1>-->
+<!--<button id="s_button">Spanish</button>-->
+<!--<div class="english">-->
+<!--<DL>-->
+    <!--<DT class="important"><STRONG>Will I encounter wild life at the park?</STRONG>-->
+        <!--<DD class="invisible">Yes... obviously.-->
+
+    <!--<DT class="important"><STRONG>Will the wild life attack me?</STRONG>-->
+        <!--<DD class="invisible">maybe-->
+
+    <!--<DT class="important"><STRONG>Is the park safe for kids?</STRONG>-->
+        <!--<DD class="invisible">Yes-(ish). We recommend keeping a close eye on em'. (You know why)-->
+
+    <!--<DT class="important"><STRONG>Are there bike trails?</STRONG>-->
+        <!--<DD class="invisible">Yes! Enjoy our scenic bike trails, or go fully with your adventure on the-->
+            <!--rugged "non-trails".-->
+
+    <!--<DT class="important"><STRONG>How big is the park?</STRONG>-->
+        <!--<DD class="invisible">Big enough!-->
+
+    <!--<DT class="important"><STRONG>Are dogs allowed? </STRONG>-->
+        <!--<DD class="invisible">We allow dogs to bring their humans.-->
+
+    <!--<DT class="important"><STRONG>What are the park hours?</STRONG>-->
+        <!--<DD class="invisible">Safe Hours: Sunrise to Sunset.-->
+
+    <!--<DT class="important"><STRONG>Are fires allowed in the parks?</STRONG>-->
+        <!--<DD class="invisible">Yes, fires are allowed but only in enclosed fireplaces or grills.<br> ALSO PUT OUT YOUR OWN FIRE!-->
+
+    <!--<DT class="important"><STRONG>What recreation facilities does the park offer?</STRONG>-->
+        <!--<DD class="invisible">Nature.-->
+
+    <!--<DT class="important"><STRONG>Which facilities are reservable for parties and/or events?</STRONG>-->
+        <!--<DD class="invisible"> 3 months ahead.-->
+
+<!--</DL>-->
+<!--</div>-->
+<!--<div class="anc">-->
+<!--<DL>-->
+    <!--<DT class="spanish"><STRONG>¿Voy a encontrar vida salvaje en el parque?</STRONG>-->
+    <!--<DD class="invisible">Yes... obviously.-->
+
+    <!--<DT class="spanish"><STRONG>Will the wild life attack me?</STRONG>-->
+    <!--<DD class="invisible">maybe-->
+
+    <!--<DT class="spanish"><STRONG>Is the park safe for kids?</STRONG>-->
+    <!--<DD class="invisible">Yes-(ish). We recommend keeping a close eye on em'. (You know why)-->
+
+    <!--<DT class="spanish"><STRONG>Are there bike trails?</STRONG>-->
+    <!--<DD class="invisible">Yes! Enjoy our scenic bike trails, or go fully with your adventure on the-->
+        <!--rugged "non-trails".-->
+
+    <!--<DT class="spanish"><STRONG>How big is the park?</STRONG>-->
+    <!--<DD class="invisible">Big enough!-->
+
+    <!--<DT class="spanish"><STRONG>Are dogs allowed? </STRONG>-->
+    <!--<DD class="invisible">We allow dogs to bring their humans.-->
+
+    <!--<DT class="spanish"><STRONG>What are the park hours?</STRONG>-->
+    <!--<DD class="invisible">Safe Hours: Sunrise to Sunset.-->
+
+    <!--<DT class="spanish"><STRONG>Are fires allowed in the parks?</STRONG>-->
+    <!--<DD class="invisible">Yes, fires are allowed but only in enclosed fireplaces or grills.<br> ALSO PUT OUT YOUR OWN FIRE!-->
+
+    <!--<DT class="spanish"><STRONG>What recreation facilities does the park offer?</STRONG>-->
+    <!--<DD class="invisible">Nature.-->
+
+    <!--<DT class="spanish"><STRONG>Which facilities are reservable for parties and/or events?</STRONG>-->
+    <!--<DD class="invisible"> 3 months ahead.-->
+
+<!--</DL>-->
+<!--</div>-->
+<!--</div>-->
+<div class="parks">
+<h1>World's Greatest Park's</h1>
+<h3 id="lemur-parks-toggle">Lemur National Park</h3>
+<ul id="lemur-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+    <li>Everglades</li>
+</ul>
+<h3 id="llama-parks-texas-toggle">Llama National Park</h3>
+<ul id="llama-parks">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li>Enchanted Rock</li>
+</ul>
+<h3 id="otter-parks-texas-toggle">Otter National Park</h3>
+<ul id="otter-parks">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li>Enchanted Rock</li>
+</ul>
+</div>
+
+</body>
+</html>
+
+
+
