@@ -1,0 +1,77 @@
+.death-star {
+    background-image: linear-gradient(#99a .5vmin, transparent .5vmin), linear-gradient(to right, #99a, #334);
+    border-radius: 50%;
+    height: 60vmin;
+    margin: 20vmin;
+    perspective: 1000vmin;
+    perspective-origin: 50%;
+    position: relative;
+    width: 60vmin;
+}
+
+.wrapper{
+height: 100%;
+left: 0;
+overflow: hidden;
+position: absolute;
+top: 0;
+transform-style: preserve-3d;
+width: 100%;
+z-index: 0;
+}
+
+.wrapper:after {
+box-shadow:-25vmin 0 25vmin #000 inset;
+content:"";
+height:100%;
+left:0;
+position:absolute;
+top:0;
+width:100%;
+}
+.splitStar {
+border-bottom:solid 2vmin #99a;
+border-top:solid 2vmin #99a;
+box-shadow:0 1vmin 1vmin rgba(0,0,0,.5) inset;
+box-sizing:content-box;
+height:1vmin;
+left:0;
+ opacity:.5;
+position:absolute;
+top:28vmin;
+width:100%;
+}
+.lng {
+border-left: solid 1px #99a;
+border-radius: 50%;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
+.lng1{
+border-width:1vmin;
+transform:rotateY(30deg);
+}
+.lng1>.lng2 {
+border-width:2vmin;
+transform:rotateY(70deg);
+}
+.lng1>.lng3 {
+border-width:2vmin;
+transform:rotateY(110deg);
+}
+
+.innerCircle {
+background-image:linear-gradient(to right, #334, #667);
+border-radius:50%;
+box-shadow:0 -2vmin 2vmin rgba(255,255,255,.25) inset;
+height:20%;
+left:40%;
+position:absolute;
+top:20%;
+transform:rotateY(-25deg) translateZ(25vmin) rotateX(21deg);
+width:20%;
+z-index:1;
+}
