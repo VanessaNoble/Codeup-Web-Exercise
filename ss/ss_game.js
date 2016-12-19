@@ -166,8 +166,8 @@ for (var j = 0; j < buttons.length; j++) {
 }
 
 resetGame();
-
-$('.death-star').click(function () {
-    $('.button').show();
-
-});
+//
+// $('.death-star').click(function () {
+//     $('.button').show();
+//
+// });
